@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CALCULATOR</title>
+</head>
+
+<body>
+
+    <h1>BETÜL EBRU YILDIZ</h1>
+
+    <div class="background"></div>
+    <div class="text-box">
+        <p>
+            On ne voit bien qu’avec le coeur. L’essentiel est invisible pour les yeux...
+            <br>
+            <b>Antoine de Saint-Exupéry</b>
+        </p>
+    </div>
+
+    <h3>Küçük Prens Hesap Makinesi</h3>
+
+    <div class="calculator">
+        <input type="text" id="text" disabled>
+        <div class="buttons">
+            <button class="button" onclick="clearText()">C</button>
+            <button class="button" onclick="mathSqrtText('√')">√</button>
+            <button class="button" onclick="appendToText('**')">x^y</button>
+            <button class="button" onclick="percentageText('%')">%</button>
+            <button class="button" onclick="appendToText('7')">7</button>
+            <button class="button" onclick="appendToText('8')">8</button>
+            <button class="button" onclick="appendToText('9')">9</button>
+            <button class="button" onclick="appendToText('/')">/</button>
+            <button class="button" onclick="appendToText('4')">4</button>
+            <button class="button" onclick="appendToText('5')">5</button>
+            <button class="button" onclick="appendToText('6')">6</button>
+            <button class="button" onclick="appendToText('*')">*</button>
+            <button class="button" onclick="appendToText('1')">1</button>
+            <button class="button" onclick="appendToText('2')">2</button>
+            <button class="button" onclick="appendToText('3')">3</button>
+            <button class="button" onclick="appendToText('-')">-</button>
+            <button class="button" onclick="appendToText('.')">.</button>
+            <button class="button" onclick="appendToText('0')">0</button>
+            <button class="button" onclick="appendToText('+')">+</button>
+            <button class="button" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+
+
+</body>
+
+</html>
